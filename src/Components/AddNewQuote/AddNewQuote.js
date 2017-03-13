@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import { db } from './db';
-import './App.css';
+import { db } from '../../db';
 
 class AddNewQuote extends Component {
   constructor(props) {
     super(props);
-    console.log(db);
+    console.log(this.props);
   }
 
   render() {
