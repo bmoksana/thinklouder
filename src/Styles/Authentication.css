@@ -1,0 +1,14 @@
+.Authentication {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  height: 100%;
+}
+
+.signin-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  margin-top: 30vh;
+}
