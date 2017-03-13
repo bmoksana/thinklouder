@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { db } from './db';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    console.log(db);
+  }
+
   render() {
+    console.log(this);
     return (
       <div className="App">
         <div className="App-header">
