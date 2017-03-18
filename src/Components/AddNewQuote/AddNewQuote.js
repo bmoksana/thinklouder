@@ -13,6 +13,9 @@ class AddNewQuote extends Component {
       <div className="App">
         <form>
           <input placeholder="Title" />
+          <input placeholder="Quote" />
+          <input placeholder="Author" />
+          <input placeholder="Tag" />
         </form>
       </div>
     );
