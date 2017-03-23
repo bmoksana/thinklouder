@@ -5,6 +5,7 @@ import firebase from 'firebase';
 
 import App from './Layouts/App';
 import AdminLayout from './Layouts/AdminLayout';
+import QuoteLayout from './Layouts/QuoteLayout';
 
 import Authentication from './Layouts/Authentication';
 import AddNewQuote from './Components/AddNewQuote/AddNewQuote';
@@ -24,6 +25,7 @@ function requireAuth(nextState, replace) {
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
+      <Route path="quotes" component={QuoteLayout} />
       <Route path="admin" onEnter={requireAuth} component={AdminLayout}>
         <Route path="add-new-quote" component={AddNewQuote} />
       </Route>
